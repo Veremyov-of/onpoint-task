@@ -52,7 +52,7 @@ function touchEnd() {
     
     if(moveBy < -100 && currentIndex < slides.length - 1) currentIndex += 1;
     if(moveBy > 100 && currentIndex > 0) currentIndex -= 1;
-
+    animationAbout()
     
 
     setPositionByIndex();
@@ -105,21 +105,22 @@ nextBtn.addEventListener('click', () => {
 });
 
 
-// let animationAbout = document.querySelectorAll('.about-animation');
+let about = document.querySelectorAll('.about-animation');
 
-// function test() {
-//     if(currentIndex === 1) {
-//         animationAbout.forEach(item => {
-//             item.classList.add('active_about');
-//         })
-//     } else {
-//         animationAbout.forEach(item => {
-//             item.classList.remove('active_about');
-//         })
-//     }
-// }
+function animationAbout() {
+    if(currentIndex === 1) {
+        about.forEach(item => {
+            item.classList.add('active_about');
+        })
+    } else {
+        about.forEach(item => {
+            item.classList.remove('active_about');
+        })
+    }
+}
 
 
+//* pop-up
 const detailedBtn = document.querySelector('.product-btn');
 const popup = document.querySelector('.product_wrapp');
 const closeBtn = document.querySelector('.close');
@@ -131,8 +132,6 @@ detailedBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     popup.classList.remove('product_wrapp-active');
 });
-
-
 
 const popupContainer = document.querySelectorAll('.popup_container');
 const popupNav = document.querySelectorAll('.pagination-nav');
@@ -158,3 +157,4 @@ paginationBackBtn.addEventListener('click', () => {
     popupNav[1].classList.remove('pagination-nav-active');
 });
 
+//! pop-up

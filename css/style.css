@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Thin'), local('Gilroy-Thin'),
         url('Gilroy-Thin.woff2') format('woff2'),
@@ -6,7 +6,7 @@
         url('Gilroy-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-  }
+  } */
 
 /****** Global *******/
 
@@ -150,6 +150,7 @@ html, body {
 }
 
 .home-subtitle {
+    font-family: 'DIN Pro';
     margin-bottom: 15px;
     font-size: 44px;
     font-weight: 400;
@@ -160,18 +161,19 @@ html, body {
     text-transform: uppercase;
     font-family: 'Gilroy';
     font-size: 110px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .home-title span {
-    font-family: sans-serif;
+    letter-spacing: .6rem;
+    font-family: 'Gilroy';
     font-weight: 600;
 }
 
 .next-btn {
     cursor: pointer;
     font-family: 'Gilroy';
-    font-weight: 600;
+    font-weight: 500;
     font-size: 28px;
     position: relative;
     z-index: 3;
@@ -207,10 +209,6 @@ html, body {
 
 .bacterium-top {
     background-image: url(../img/animation/home-slide/bacterium_top.png);
-    /* background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat; */
-
 
     width: 70px;
     height: 70px;
@@ -273,7 +271,7 @@ html, body {
     animation-name: oscillation_bacterium-center-bottom;
     animation-duration: 14s;
     animation-direction: alternate;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 
 }
@@ -331,8 +329,8 @@ html, body {
 
 .about-title {
     text-transform: uppercase;
-    font-family: 'Gilroy';
-    font-weight: 600;
+    font-family: 'DIN Pro';
+    font-weight: 400;
     line-height: 40px;
     letter-spacing: .15rem;
     width: 300px;
@@ -373,13 +371,14 @@ html, body {
 }
 
 .about_text {
+    font-family: 'DIN Pro';
+    font-weight: 400;
     position: relative;
     z-index: 100;
     text-align: end;
     padding: 35px 50px;
     margin:auto;
     font-size: 25px;
-    font-weight: 500;
     width: 800px;
     height: 400px;
 }
@@ -495,18 +494,20 @@ html, body {
 }
 
 .product-subtitle {
+    font-family: 'DIN Pro';
     margin-left: 250px;
     text-transform: uppercase;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: .16rem;
 }
 
 .product-title {
-    margin-left: 250px;
+    font-family: 'Gilroy';
+    margin-left: 245px;
     letter-spacing: .26rem;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 100px;
 }
 
@@ -534,6 +535,8 @@ html, body {
 }
 
 .product_container-item p {
+    font-family: 'DIN Pro';
+    font-weight: 400;
     font-size: 25px;
 }
 
@@ -562,12 +565,12 @@ html, body {
 }
 
 .product_container-item:last-child p{
-    width: 120px;
+    width: 140px;
 }
 
 .product-btn {
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     right: 40px;
 
     cursor: pointer;
